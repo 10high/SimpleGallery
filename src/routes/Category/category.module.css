@@ -1,0 +1,63 @@
+.header {
+    text-transform: uppercase;
+    margin: 16px 0 0 0;
+    font-size: 1.4rem;
+}
+
+.gallery {
+    margin: 16px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    max-width: 760px;
+}
+
+.imageContainer {
+    position: relative;
+    width: 220px;
+    height: 165px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.imageDisplayLoading {
+    display: none;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: transform 1.25s;
+}
+
+.imageContainer:hover .image {
+    transform: scale(1.25);
+}
+
+
+.deleteButton {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: red;
+    z-index: 99;
+}
+
+
+.spinner {
+    display: none;
+    color: #ff0084;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    z-index: 99;
+}
+
+.spinnerLoading {
+    display: revert;
+}

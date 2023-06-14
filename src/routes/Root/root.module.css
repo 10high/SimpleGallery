@@ -1,0 +1,85 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerText {
+    font-family: "Nanum Pen Script";
+    font-size: 2rem;
+
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+    padding: 0;
+
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+
+.navlinkInactive {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #0063db;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.navlinkActive {
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    background-color: #ff0084;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #ff0084;
+    min-height: 56px;
+    margin: 32px 0 0 0;
+    padding-bottom: 16px;
+}
+
+.footerLinksWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16px;
+    max-width: 760px;
+
+}
+
+.footerLegalLink {
+    color: white;
+    font-size: clamp(.75rem, .37037037037037035vw + .6666666666666666rem, 1rem)
+}
+
+@media (hover:hover) {
+    .footerLegalLink:hover {
+        color: #000;
+        text-decoration-thickness: 2px
+    }
+}
